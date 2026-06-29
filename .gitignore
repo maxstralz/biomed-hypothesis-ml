@@ -18,3 +18,9 @@ data/model/surgery/gnn/*
 # Generated table exports
 data/table/*.csv
 data/table/**/*.csv
+
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
