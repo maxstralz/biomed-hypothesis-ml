@@ -1,0 +1,29 @@
+05:50:03 | INFO | device: cuda
+05:50:03 | INFO | cutoff_year: 2025
+05:50:03 | INFO | num_candidates: 1000000
+05:50:25 | INFO | Sampled 1000000 candidate pair(s)
+05:50:40 | INFO | Saved candidate pairs to data/model/surgery/future/candidate_pairs_2025.pkl.gz
+05:50:40 | INFO | Loading semantic embeddings from data/model/surgery/semantic/pubmedbert_2025.current.pkl.gz
+05:50:47 | INFO | Loading semantic model from data/model/surgery/semantic/pubmedbert_2022.for_2026plus.pt
+05:52:32 | INFO | device: cuda
+05:52:32 | INFO | cutoff_year: 2025
+05:52:32 | INFO | num_candidates: 1000000
+05:52:42 | INFO | Loading candidate pairs from data/model/surgery/future/candidate_pairs_2025.pkl.gz
+05:52:42 | INFO | Loading semantic embeddings from data/model/surgery/semantic/pubmedbert_2025.current.pkl.gz
+05:52:49 | INFO | Loading semantic model from data/model/surgery/semantic/pubmedbert_2022.for_2026plus.pt
+05:53:24 | INFO | Loading GNN model from data/model/surgery/gnn/graphsage_2022/model.pt
+05:53:24 | INFO | Loading GNN node features from data/model/surgery/gnn/features_2025.pkl.gz
+05:53:24 | INFO | v_features: loaded from key 'v_features' (data/model/surgery/gnn/features_2025.pkl.gz)
+05:53:29 | INFO | Saved top 10000 pairs to data/model/surgery/future/top_pairs_2026plus.csv
+05:53:44 | INFO | Saved full sampled scores to data/model/surgery/future/scored_pairs_2026plus.pkl.gz
+05:56:51 | INFO | device: cuda
+05:56:51 | INFO | cutoff_year: 2025
+05:56:51 | INFO | num_candidates: 10000000
+05:57:00 | INFO | Loading candidate pairs from data/model/surgery/future/candidate_pairs_2025.pkl.gz
+05:57:00 | INFO | Loading semantic embeddings from data/model/surgery/semantic/pubmedbert_2025.current.pkl.gz
+05:57:08 | INFO | Loading semantic model from data/model/surgery/semantic/pubmedbert_2022.for_2026plus.pt
+05:57:39 | INFO | Loading GNN model from data/model/surgery/gnn/graphsage_2022/model.pt
+05:57:39 | INFO | Loading GNN node features from data/model/surgery/gnn/features_2025.pkl.gz
+05:57:39 | INFO | v_features: loaded from key 'v_features' (data/model/surgery/gnn/features_2025.pkl.gz)
+05:57:44 | INFO | Saved top 10000 pairs to data/model/surgery/future/top_pairs_2026plus.csv
+05:58:00 | INFO | Saved full sampled scores to data/model/surgery/future/scored_pairs_2026plus.pkl.gz

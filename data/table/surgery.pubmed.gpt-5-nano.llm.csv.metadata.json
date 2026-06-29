@@ -1,0 +1,585 @@
+{
+  "prompt_version": "biomedical-concepts-v3",
+  "model": "gpt-4o-mini",
+  "base_url": "https://api.openai.com/v1",
+  "response_format": "json_schema",
+  "input_path": "data/table/surgery.pubmed.works.csv",
+  "output_path": "data/table/surgery.pubmed.gpt-5-nano.llm.csv",
+  "failure_log_path": "data/table/surgery.pubmed.gpt-5-nano.llm.csv.failures.jsonl",
+  "test_mode": false,
+  "test_limit": null,
+  "input_records": 306476,
+  "resumed_records": 271365,
+  "completed_records_this_run": 7512,
+  "failed_records_this_run": 240,
+  "failed_batches_this_run": 40,
+  "elapsed_seconds": 2959.956,
+  "batch_size": 6,
+  "workers": 3,
+  "checkpoint_every_abstracts": 100,
+  "max_concepts": 12,
+  "max_attempts_per_batch": 2,
+  "failures": [
+    {
+      "timestamp_utc": "2026-06-25T16:04:20.449154+00:00",
+      "batch_number": 2,
+      "pmids": [
+        "35247537",
+        "35247538",
+        "35247541",
+        "35247871",
+        "35248362",
+        "35248363"
+      ],
+      "error_type": "InvalidResponseError",
+      "error": "Response PMIDs do not exactly match the request. Missing=['35247871'], unexpected=[]."
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:04:20.454639+00:00",
+      "batch_number": 3,
+      "pmids": [
+        "35868904",
+        "35868975",
+        "35870521",
+        "35870766",
+        "35870798",
+        "35870799"
+      ],
+      "error_type": "InvalidResponseError",
+      "error": "Response PMIDs do not exactly match the request. Missing=['35870798'], unexpected=[]."
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:04:20.803509+00:00",
+      "batch_number": 1,
+      "pmids": [
+        "29300070",
+        "29379223",
+        "29506755",
+        "29544789",
+        "29105898",
+        "29150957"
+      ],
+      "error_type": "InvalidResponseError",
+      "error": "Response PMIDs do not exactly match the request. Missing=['29544789'], unexpected=[]."
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:04:31.176472+00:00",
+      "batch_number": 7,
+      "pmids": [
+        "38656413",
+        "38660886",
+        "38687859",
+        "38690831",
+        "38691350",
+        "38691353"
+      ],
+      "error_type": "InvalidResponseError",
+      "error": "Response PMIDs do not exactly match the request. Missing=['38691353'], unexpected=[]."
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:40:45.863412+00:00",
+      "batch_number": 1009,
+      "pmids": [
+        "39611913",
+        "39614785",
+        "39615117",
+        "39663791",
+        "39666909",
+        "39699453"
+      ],
+      "error_type": "InvalidResponseError",
+      "error": "Response PMIDs do not exactly match the request. Missing=['39699453'], unexpected=[]."
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:40:55.491454+00:00",
+      "batch_number": 1012,
+      "pmids": [
+        "39414141",
+        "39480726",
+        "39487239",
+        "39487376",
+        "39487642",
+        "39487677"
+      ],
+      "error_type": "InvalidResponseError",
+      "error": "Response PMIDs do not exactly match the request. Missing=['39487376'], unexpected=[]."
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:45:21.900682+00:00",
+      "batch_number": 1137,
+      "pmids": [
+        "39636312",
+        "39662100",
+        "39674767",
+        "39708388",
+        "39709212",
+        "39745305"
+      ],
+      "error_type": "InvalidResponseError",
+      "error": "Response PMIDs do not exactly match the request. Missing=['39709212'], unexpected=[]."
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:49:13.639638+00:00",
+      "batch_number": 1232,
+      "pmids": [
+        "39585516",
+        "39585527",
+        "39585561",
+        "39585594",
+        "39585809",
+        "39586754"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:49:13.690843+00:00",
+      "batch_number": 1230,
+      "pmids": [
+        "39582320",
+        "39582397",
+        "39582433",
+        "39584261",
+        "39584774",
+        "39584778"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:49:13.884983+00:00",
+      "batch_number": 1231,
+      "pmids": [
+        "39585172",
+        "39585306",
+        "39585386",
+        "39585432",
+        "39585454",
+        "39585456"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:49:23.587554+00:00",
+      "batch_number": 1235,
+      "pmids": [
+        "39587181",
+        "39587209",
+        "39587459",
+        "39587472",
+        "39587507",
+        "39587536"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:49:33.268255+00:00",
+      "batch_number": 1236,
+      "pmids": [
+        "39587567",
+        "39587685",
+        "39587798",
+        "39587857",
+        "39591821",
+        "39592128"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:49:36.920431+00:00",
+      "batch_number": 1237,
+      "pmids": [
+        "39592328",
+        "39603492",
+        "39603779",
+        "39607182",
+        "39609239",
+        "39618228"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:49:37.655708+00:00",
+      "batch_number": 1238,
+      "pmids": [
+        "39632671",
+        "39745410",
+        "39773761",
+        "39813587",
+        "39522813",
+        "39536450"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:49:42.876557+00:00",
+      "batch_number": 1239,
+      "pmids": [
+        "39586941",
+        "39587662",
+        "39587901",
+        "39588669",
+        "39588762",
+        "39588845"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:50:01.805217+00:00",
+      "batch_number": 1242,
+      "pmids": [
+        "39589628",
+        "39589728",
+        "39591606",
+        "39592109",
+        "39592135",
+        "39592167"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:50:01.806077+00:00",
+      "batch_number": 1243,
+      "pmids": [
+        "39592195",
+        "39592197",
+        "39592331",
+        "39592334",
+        "39592390",
+        "39592399"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:50:16.780697+00:00",
+      "batch_number": 1247,
+      "pmids": [
+        "39593243",
+        "39593258",
+        "39600102",
+        "39600112",
+        "39600157",
+        "39600296"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:50:16.787376+00:00",
+      "batch_number": 1248,
+      "pmids": [
+        "39601039",
+        "39601725",
+        "39601743",
+        "39601745",
+        "39602249",
+        "39602857"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:50:17.165461+00:00",
+      "batch_number": 1249,
+      "pmids": [
+        "39602954",
+        "39603282",
+        "39603366",
+        "39603370",
+        "39603409",
+        "39603491"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:50:26.783384+00:00",
+      "batch_number": 1252,
+      "pmids": [
+        "39615295",
+        "39619056",
+        "39622091",
+        "39630517",
+        "39642588",
+        "39645454"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:50:36.627193+00:00",
+      "batch_number": 1253,
+      "pmids": [
+        "39657363",
+        "39674737",
+        "39683432",
+        "39684424",
+        "39706723",
+        "39768833"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:50:46.272913+00:00",
+      "batch_number": 1256,
+      "pmids": [
+        "39601205",
+        "39601278",
+        "39601346",
+        "39601354",
+        "39601366",
+        "39601410"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:50:56.234776+00:00",
+      "batch_number": 1258,
+      "pmids": [
+        "39601814",
+        "39601834",
+        "39601859",
+        "39601899",
+        "39601976",
+        "39602014"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:51:21.680743+00:00",
+      "batch_number": 1263,
+      "pmids": [
+        "39604902",
+        "39604913",
+        "39604929",
+        "39605018",
+        "39605024",
+        "39605037"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:51:36.677560+00:00",
+      "batch_number": 1265,
+      "pmids": [
+        "39608414",
+        "39608478",
+        "39608680",
+        "39609177",
+        "39612583",
+        "39613171"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:51:36.785212+00:00",
+      "batch_number": 1266,
+      "pmids": [
+        "39613250",
+        "39614861",
+        "39621879",
+        "39621880",
+        "39626331",
+        "39634797"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:51:37.060816+00:00",
+      "batch_number": 1267,
+      "pmids": [
+        "39634813",
+        "39637301",
+        "39642087",
+        "39645453",
+        "39657739",
+        "39661523"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:51:46.314110+00:00",
+      "batch_number": 1268,
+      "pmids": [
+        "39684473",
+        "39169835",
+        "39169845",
+        "39186312",
+        "39326914",
+        "39373485"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:51:46.366934+00:00",
+      "batch_number": 1269,
+      "pmids": [
+        "39373493",
+        "39377252",
+        "39390807",
+        "39444319",
+        "39468755",
+        "39540730"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:51:46.639391+00:00",
+      "batch_number": 1270,
+      "pmids": [
+        "39565916",
+        "39579090",
+        "39585651",
+        "39602603",
+        "39603651",
+        "39604448"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:52:11.440194+00:00",
+      "batch_number": 1274,
+      "pmids": [
+        "39607779",
+        "39607781",
+        "39607958",
+        "39607971",
+        "39607972",
+        "39607973"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:52:19.153578+00:00",
+      "batch_number": 1276,
+      "pmids": [
+        "39609600",
+        "39609629",
+        "39609671",
+        "39609743",
+        "39609803",
+        "39609915"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:52:29.160942+00:00",
+      "batch_number": 1277,
+      "pmids": [
+        "39610031",
+        "39610778",
+        "39612552",
+        "39612809",
+        "39612865",
+        "39613025"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:52:44.661237+00:00",
+      "batch_number": 1282,
+      "pmids": [
+        "39673504",
+        "39673742",
+        "39673743",
+        "39766232",
+        "39768841",
+        "39848828"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:52:44.730599+00:00",
+      "batch_number": 1283,
+      "pmids": [
+        "40177758",
+        "40177764",
+        "39607962",
+        "39607969",
+        "39609270",
+        "39609741"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:52:44.745733+00:00",
+      "batch_number": 1281,
+      "pmids": [
+        "39656763",
+        "39657249",
+        "39657253",
+        "39660772",
+        "39662189",
+        "39667930"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:53:08.687589+00:00",
+      "batch_number": 1288,
+      "pmids": [
+        "39614202",
+        "39614205",
+        "39614214",
+        "39614252",
+        "39614279",
+        "39614293"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:53:08.714764+00:00",
+      "batch_number": 1287,
+      "pmids": [
+        "39613956",
+        "39613961",
+        "39613982",
+        "39614006",
+        "39614176",
+        "39614196"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    },
+    {
+      "timestamp_utc": "2026-06-25T16:53:09.153492+00:00",
+      "batch_number": 1289,
+      "pmids": [
+        "39614639",
+        "39615154",
+        "39615160",
+        "39615582",
+        "39615620",
+        "39615889"
+      ],
+      "error_type": "ExtractionError",
+      "error": "Request failed after 2 attempt(s): HTTP 429: {\"error\": {\"message\": \"Rate limit reached for gpt-4o-mini in organization org-AQeRk15cv7FUEAcxFgl1fcm1 on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.\", \"type\": \"requests\", \"param\": null, \"code\": \"rate_limit_exceeded\"}}"
+    }
+  ],
+  "created_at_utc": "2026-06-25T16:53:33.453898+00:00"
+}

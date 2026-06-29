@@ -1,0 +1,51 @@
+10:38:08 | INFO | device: cuda
+10:38:08 | INFO | cutoff_year: 2025
+10:38:08 | INFO | num_candidates: 1000000
+10:38:08 | INFO | candidate_mode: module_cross
+10:38:28 | INFO | Collecting concept IDs from data/table/surgery.pubmed.gpt-5-nano.llm.csv | modules=['colorectal_surgery'] | years=None-2025
+10:38:33 | INFO | Collected 16841 concept ID(s)
+10:38:33 | INFO | Collecting concept IDs from data/table/surgery.pubmed.gpt-5-nano.llm.csv | modules=['perioperative_biology_microbiome'] | years=None-2025
+10:38:38 | INFO | Collected 39969 concept ID(s)
+10:38:38 | INFO | Candidate mode=module_cross | sources=16841 | targets=39969 | distance=2-6 | target_max_degree=500
+12:09:36 | INFO | Sampled 1000000 source-target candidate pair(s)
+12:09:49 | INFO | Saved candidate pairs to data/model/surgery/future/candidate_pairs_2025.colorectal_x_microbiome.pkl.gz
+12:09:49 | INFO | Loading semantic embeddings from data/model/surgery/semantic/pubmedbert_2025.current.pkl.gz
+12:09:58 | INFO | Loading semantic model from data/model/surgery/semantic/pubmedbert_2022.for_2026plus.pt
+12:10:39 | INFO | Loading GNN model from data/model/surgery/gnn/graphsage_2022/model.pt
+12:10:39 | INFO | Loading GNN node features from data/model/surgery/gnn/features_2025.pkl.gz
+12:10:39 | INFO | v_features: loaded from key 'v_features' (data/model/surgery/gnn/features_2025.pkl.gz)
+12:17:31 | INFO | device: cuda
+12:17:31 | INFO | cutoff_year: 2025
+12:17:31 | INFO | num_candidates: 1000000
+12:17:31 | INFO | candidate_mode: module_cross
+12:17:43 | INFO | Loading candidate pairs from data/model/surgery/future/candidate_pairs_2025.colorectal_x_microbiome.pkl.gz
+12:17:43 | INFO | Loading semantic embeddings from data/model/surgery/semantic/pubmedbert_2025.current.pkl.gz
+12:17:52 | INFO | Loading semantic model from data/model/surgery/semantic/pubmedbert_2022.for_2026plus.pt
+12:18:31 | INFO | Loading GNN model from data/model/surgery/gnn/graphsage_2022/model.pt
+12:18:31 | INFO | Loading GNN node features from data/model/surgery/gnn/features_2025.pkl.gz
+12:18:31 | INFO | v_features: loaded from key 'v_features' (data/model/surgery/gnn/features_2025.pkl.gz)
+12:18:31 | INFO | GNN node features loaded: shape=(82283, 10) dtype=float32
+12:18:31 | INFO | Applying log1p transform to GNN node features
+12:18:31 | INFO | Applying z-score normalization to GNN node features
+12:18:31 | INFO | Loading graph for GNN scoring from data/graph/surgery.edges.pkl
+12:18:33 | INFO | Building GNN edge_index for cutoff_year=2025
+12:18:33 | INFO | GNN edge_index built: shape=(2, 7327902) num_edges=7327902
+12:18:33 | INFO | Creating PyG Data object for 82283 node(s)
+12:18:33 | INFO | Preparing 1000000 candidate pair(s) for GNN scoring
+12:18:33 | INFO | Creating LinkNeighborLoader: batch_size=16384, fanout=(20, 15), num_workers=8
+12:18:34 | INFO | LinkNeighborLoader created
+12:18:34 | INFO | Initializing GNN encoder/decoder
+12:18:34 | INFO | Loading GNN checkpoint weights
+12:18:34 | INFO | Starting GNN scoring over 1000000 candidate pair(s)
+12:18:36 | INFO | Finished GNN scoring: 1000000 score(s)
+12:18:36 | INFO | Ranking 1000000 scored candidate pair(s)
+12:18:36 | INFO | Preparing top-10000 output table
+12:18:36 | INFO | Loading cutoff graph for output annotations
+12:19:30 | INFO | Computing degree annotations for top-10000 pair(s)
+12:19:30 | INFO | Computing graph-distance annotations for top-10000 pair(s)
+12:34:56 | INFO | Finished graph-distance annotations for 10000 pair(s) using 1578 bounded BFS traversal(s)
+12:34:56 | INFO | Building top-pairs dataframe
+12:34:56 | INFO | Writing top-pairs CSV to data/model/surgery/future/top_pairs_2026plus.colorectal_x_microbiome.csv
+12:34:56 | INFO | Saved top 10000 pairs to data/model/surgery/future/top_pairs_2026plus.colorectal_x_microbiome.csv
+12:34:56 | INFO | Writing full scored-pairs cache to data/model/surgery/future/scored_pairs_2026plus.colorectal_x_microbiome.pkl.gz
+12:35:10 | INFO | Saved full sampled scores to data/model/surgery/future/scored_pairs_2026plus.colorectal_x_microbiome.pkl.gz

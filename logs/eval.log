@@ -1,0 +1,111 @@
+17:56:25 | DEBUG | Sequential(
+  (0): Linear(in_features=1536, out_features=1024, bias=True)
+  (1): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, bias=True, track_running_stats=True)
+  (2): ReLU()
+  (3): Dropout(p=0.1, inplace=False)
+  (4): Linear(in_features=1024, out_features=819, bias=True)
+  (5): BatchNorm1d(819, eps=1e-05, momentum=0.1, affine=True, bias=True, track_running_stats=True)
+  (6): ReLU()
+  (7): Dropout(p=0.1, inplace=False)
+  (8): Linear(in_features=819, out_features=10, bias=True)
+  (9): BatchNorm1d(10, eps=1e-05, momentum=0.1, affine=True, bias=True, track_running_stats=True)
+  (10): ReLU()
+  (11): Dropout(p=0.1, inplace=False)
+  (12): Linear(in_features=10, out_features=1, bias=True)
+  (13): BatchNorm1d(1, eps=1e-05, momentum=0.1, affine=True, bias=True, track_running_stats=True)
+  (14): Sigmoid()
+)
+17:56:25 | DEBUG | Getting embeddings for 10000 samples
+17:56:26 | DEBUG | Getting embeddings for 10000 samples
+17:56:26 | DEBUG | Getting embeddings for 10000 samples
+17:56:26 | DEBUG | Getting embeddings for 10000 samples
+17:56:26 | DEBUG | Getting embeddings for 10000 samples
+17:56:27 | DEBUG | Getting embeddings for 10000 samples
+17:56:27 | DEBUG | Getting embeddings for 10000 samples
+17:56:27 | DEBUG | Getting embeddings for 10000 samples
+17:56:27 | DEBUG | Getting embeddings for 10000 samples
+17:56:27 | DEBUG | Getting embeddings for 10000 samples
+17:56:28 | DEBUG | Getting embeddings for 10000 samples
+17:56:28 | DEBUG | Getting embeddings for 10000 samples
+17:56:28 | DEBUG | Getting embeddings for 10000 samples
+17:56:28 | DEBUG | Getting embeddings for 10000 samples
+17:56:29 | DEBUG | Getting embeddings for 10000 samples
+17:56:29 | DEBUG | Getting embeddings for 10000 samples
+17:56:29 | DEBUG | Getting embeddings for 10000 samples
+17:56:29 | DEBUG | Getting embeddings for 10000 samples
+17:56:30 | DEBUG | Getting embeddings for 10000 samples
+17:56:30 | DEBUG | Getting embeddings for 10000 samples
+18:11:08 | DEBUG | Sequential(
+  (0): Linear(in_features=1536, out_features=1024, bias=True)
+  (1): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (2): ReLU()
+  (3): Dropout(p=0.1, inplace=False)
+  (4): Linear(in_features=1024, out_features=819, bias=True)
+  (5): BatchNorm1d(819, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (6): ReLU()
+  (7): Dropout(p=0.1, inplace=False)
+  (8): Linear(in_features=819, out_features=10, bias=True)
+  (9): BatchNorm1d(10, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (10): ReLU()
+  (11): Dropout(p=0.1, inplace=False)
+  (12): Linear(in_features=10, out_features=1, bias=True)
+  (13): BatchNorm1d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (14): Sigmoid()
+)
+18:11:08 | DEBUG | Getting embeddings for 10000 samples
+18:11:09 | DEBUG | Getting embeddings for 10000 samples
+18:11:09 | DEBUG | Getting embeddings for 10000 samples
+18:11:09 | DEBUG | Getting embeddings for 10000 samples
+18:11:10 | DEBUG | Getting embeddings for 10000 samples
+18:11:10 | DEBUG | Getting embeddings for 10000 samples
+18:11:11 | DEBUG | Getting embeddings for 10000 samples
+18:11:11 | DEBUG | Getting embeddings for 10000 samples
+18:11:12 | DEBUG | Getting embeddings for 10000 samples
+18:11:12 | DEBUG | Getting embeddings for 10000 samples
+18:11:12 | DEBUG | Getting embeddings for 10000 samples
+18:11:13 | DEBUG | Getting embeddings for 10000 samples
+18:11:13 | DEBUG | Getting embeddings for 10000 samples
+18:11:13 | DEBUG | Getting embeddings for 10000 samples
+18:11:14 | DEBUG | Getting embeddings for 10000 samples
+18:11:14 | DEBUG | Getting embeddings for 10000 samples
+18:11:14 | DEBUG | Getting embeddings for 10000 samples
+18:11:15 | DEBUG | Getting embeddings for 10000 samples
+18:11:15 | DEBUG | Getting embeddings for 10000 samples
+18:11:15 | DEBUG | Getting embeddings for 10000 samples
+21:04:55 | DEBUG | Sequential(
+  (0): Linear(in_features=1536, out_features=1024, bias=True)
+  (1): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (2): ReLU()
+  (3): Dropout(p=0.1, inplace=False)
+  (4): Linear(in_features=1024, out_features=819, bias=True)
+  (5): BatchNorm1d(819, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (6): ReLU()
+  (7): Dropout(p=0.1, inplace=False)
+  (8): Linear(in_features=819, out_features=10, bias=True)
+  (9): BatchNorm1d(10, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (10): ReLU()
+  (11): Dropout(p=0.1, inplace=False)
+  (12): Linear(in_features=10, out_features=1, bias=True)
+  (13): BatchNorm1d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (14): Sigmoid()
+)
+21:04:55 | DEBUG | Getting embeddings for 10000 samples
+21:04:56 | DEBUG | Getting embeddings for 10000 samples
+21:04:56 | DEBUG | Getting embeddings for 10000 samples
+21:04:56 | DEBUG | Getting embeddings for 10000 samples
+21:04:57 | DEBUG | Getting embeddings for 10000 samples
+21:04:57 | DEBUG | Getting embeddings for 10000 samples
+21:04:57 | DEBUG | Getting embeddings for 10000 samples
+21:04:58 | DEBUG | Getting embeddings for 10000 samples
+21:04:58 | DEBUG | Getting embeddings for 10000 samples
+21:04:59 | DEBUG | Getting embeddings for 10000 samples
+21:04:59 | DEBUG | Getting embeddings for 10000 samples
+21:05:00 | DEBUG | Getting embeddings for 10000 samples
+21:05:00 | DEBUG | Getting embeddings for 10000 samples
+21:05:00 | DEBUG | Getting embeddings for 10000 samples
+21:05:01 | DEBUG | Getting embeddings for 10000 samples
+21:05:01 | DEBUG | Getting embeddings for 10000 samples
+21:05:01 | DEBUG | Getting embeddings for 10000 samples
+21:05:02 | DEBUG | Getting embeddings for 10000 samples
+21:05:02 | DEBUG | Getting embeddings for 10000 samples
+21:05:03 | DEBUG | Getting embeddings for 10000 samples

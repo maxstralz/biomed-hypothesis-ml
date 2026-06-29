@@ -1,0 +1,20 @@
+# macOS Finder metadata
+.DS_Store
+
+# Generated embedding shards
+data/embeddings/surgery_pubmedbert_current/embeddings_*.pkl.gz
+!data/embeddings/surgery_pubmedbert_current/.gitkeep
+
+# Generated surgery model artifacts
+data/model/surgery/semantic/*
+!data/model/surgery/semantic/.gitkeep
+
+data/model/surgery/best_models/*
+!data/model/surgery/best_models/.gitkeep
+
+data/model/surgery/gnn/*
+!data/model/surgery/gnn/.gitkeep
+
+# Generated table exports
+data/table/*.csv
+data/table/**/*.csv

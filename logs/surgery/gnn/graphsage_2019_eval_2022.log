@@ -1,0 +1,6 @@
+21:05:44 | INFO | Loading dataset
+21:05:44 | INFO | Loading node features
+21:05:44 | INFO | v_features: loaded from key 'v_features' (data/model/surgery/gnn/features_2022.pkl.gz)
+21:05:44 | INFO | Building past-graph edge_index
+21:05:48 | INFO | Eval split=test | AUC=0.9092 | TP=7173 FP=12997 FN=2827 TN=177003
+21:05:50 | INFO | Saved predictions to data/model/surgery/best_models/gnn_predictions_2022.final.pkl.gz

@@ -1,0 +1,124 @@
+10:20:48 | INFO | device: cpu
+10:20:48 | INFO | cutoff_year: 2025
+10:20:48 | INFO | num_candidates: 500000
+10:20:48 | INFO | candidate_mode: anchor
+10:25:00 | INFO | device: cuda
+10:25:00 | INFO | cutoff_year: 2025
+10:25:00 | INFO | num_candidates: 500000
+10:25:00 | INFO | candidate_mode: anchor
+10:25:20 | INFO | Candidate mode=anchor | sources=72 | targets=82283 | distance=2-6 | target_max_degree=500
+11:14:57 | INFO | Sampled 500000 source-target candidate pair(s)
+11:15:02 | INFO | Saved candidate pairs to data/model/surgery/future/candidate_pairs_2025.anchor.pkl.gz
+11:15:02 | INFO | Loading semantic embeddings from data/model/surgery/semantic/pubmedbert_2025.current.pkl.gz
+11:15:10 | INFO | Loading semantic model from data/model/surgery/semantic/pubmedbert_2022.for_2026plus.pt
+11:15:38 | INFO | Loading GNN model from data/model/surgery/gnn/graphsage_2022/model.pt
+11:15:38 | INFO | Loading GNN node features from data/model/surgery/gnn/features_2025.pkl.gz
+11:15:38 | INFO | v_features: loaded from key 'v_features' (data/model/surgery/gnn/features_2025.pkl.gz)
+11:19:08 | INFO | device: cuda
+11:19:08 | INFO | cutoff_year: 2025
+11:19:08 | INFO | num_candidates: 500000
+11:19:08 | INFO | candidate_mode: anchor
+11:19:18 | INFO | Loading candidate pairs from data/model/surgery/future/candidate_pairs_2025.anchor.pkl.gz
+11:19:19 | INFO | Loading semantic embeddings from data/model/surgery/semantic/pubmedbert_2025.current.pkl.gz
+11:19:26 | INFO | Loading semantic model from data/model/surgery/semantic/pubmedbert_2022.for_2026plus.pt
+11:19:46 | INFO | Loading GNN model from data/model/surgery/gnn/graphsage_2022/model.pt
+11:19:46 | INFO | Loading GNN node features from data/model/surgery/gnn/features_2025.pkl.gz
+11:19:46 | INFO | v_features: loaded from key 'v_features' (data/model/surgery/gnn/features_2025.pkl.gz)
+11:31:24 | INFO | device: cuda
+11:31:24 | INFO | cutoff_year: 2025
+11:31:24 | INFO | num_candidates: 500000
+11:31:24 | INFO | candidate_mode: anchor
+11:31:34 | INFO | Loading candidate pairs from data/model/surgery/future/candidate_pairs_2025.anchor.pkl.gz
+11:31:34 | INFO | Loading semantic embeddings from data/model/surgery/semantic/pubmedbert_2025.current.pkl.gz
+11:31:41 | INFO | Loading semantic model from data/model/surgery/semantic/pubmedbert_2022.for_2026plus.pt
+11:32:03 | INFO | Loading GNN model from data/model/surgery/gnn/graphsage_2022/model.pt
+11:32:03 | INFO | Loading GNN node features from data/model/surgery/gnn/features_2025.pkl.gz
+11:32:03 | INFO | v_features: loaded from key 'v_features' (data/model/surgery/gnn/features_2025.pkl.gz)
+11:34:35 | INFO | device: cuda
+11:34:35 | INFO | cutoff_year: 2025
+11:34:35 | INFO | num_candidates: 500000
+11:34:35 | INFO | candidate_mode: anchor
+11:34:44 | INFO | Loading candidate pairs from data/model/surgery/future/candidate_pairs_2025.anchor.pkl.gz
+11:34:44 | INFO | Loading semantic embeddings from data/model/surgery/semantic/pubmedbert_2025.current.pkl.gz
+11:34:52 | INFO | Loading semantic model from data/model/surgery/semantic/pubmedbert_2022.for_2026plus.pt
+11:35:10 | INFO | Loading GNN model from data/model/surgery/gnn/graphsage_2022/model.pt
+11:35:10 | INFO | Loading GNN node features from data/model/surgery/gnn/features_2025.pkl.gz
+11:35:10 | INFO | v_features: loaded from key 'v_features' (data/model/surgery/gnn/features_2025.pkl.gz)
+11:35:10 | INFO | GNN node features loaded: shape=(82283, 10) dtype=float32
+11:35:10 | INFO | Applying log1p transform to GNN node features
+11:35:10 | INFO | Applying z-score normalization to GNN node features
+11:35:10 | INFO | Loading graph for GNN scoring from data/graph/surgery.edges.pkl
+11:35:11 | INFO | Building GNN edge_index for cutoff_year=2025
+11:35:11 | INFO | GNN edge_index built: shape=(2, 7327902) num_edges=7327902
+11:35:11 | INFO | Creating PyG Data object for 82283 node(s)
+11:35:11 | INFO | Preparing 500000 candidate pair(s) for GNN scoring
+11:35:11 | INFO | Creating LinkNeighborLoader: batch_size=16384, fanout=(20, 15), num_workers=8
+11:35:12 | INFO | LinkNeighborLoader created
+11:35:12 | INFO | Initializing GNN encoder/decoder
+11:35:12 | INFO | Loading GNN checkpoint weights
+11:35:12 | INFO | Starting GNN scoring over 500000 candidate pair(s)
+11:35:14 | INFO | Finished GNN scoring: 500000 score(s)
+11:37:59 | INFO | device: cuda
+11:37:59 | INFO | cutoff_year: 2025
+11:37:59 | INFO | num_candidates: 500000
+11:37:59 | INFO | candidate_mode: anchor
+11:38:09 | INFO | Loading candidate pairs from data/model/surgery/future/candidate_pairs_2025.anchor.pkl.gz
+11:38:09 | INFO | Loading semantic embeddings from data/model/surgery/semantic/pubmedbert_2025.current.pkl.gz
+11:38:16 | INFO | Loading semantic model from data/model/surgery/semantic/pubmedbert_2022.for_2026plus.pt
+11:38:34 | INFO | Loading GNN model from data/model/surgery/gnn/graphsage_2022/model.pt
+11:38:34 | INFO | Loading GNN node features from data/model/surgery/gnn/features_2025.pkl.gz
+11:38:34 | INFO | v_features: loaded from key 'v_features' (data/model/surgery/gnn/features_2025.pkl.gz)
+11:38:34 | INFO | GNN node features loaded: shape=(82283, 10) dtype=float32
+11:38:34 | INFO | Applying log1p transform to GNN node features
+11:38:34 | INFO | Applying z-score normalization to GNN node features
+11:38:34 | INFO | Loading graph for GNN scoring from data/graph/surgery.edges.pkl
+11:38:36 | INFO | Building GNN edge_index for cutoff_year=2025
+11:38:36 | INFO | GNN edge_index built: shape=(2, 7327902) num_edges=7327902
+11:38:36 | INFO | Creating PyG Data object for 82283 node(s)
+11:38:36 | INFO | Preparing 500000 candidate pair(s) for GNN scoring
+11:38:36 | INFO | Creating LinkNeighborLoader: batch_size=16384, fanout=(20, 15), num_workers=8
+11:38:36 | INFO | LinkNeighborLoader created
+11:38:36 | INFO | Initializing GNN encoder/decoder
+11:38:37 | INFO | Loading GNN checkpoint weights
+11:38:37 | INFO | Starting GNN scoring over 500000 candidate pair(s)
+11:38:38 | INFO | Finished GNN scoring: 500000 score(s)
+11:38:38 | INFO | Ranking 500000 scored candidate pair(s)
+11:38:38 | INFO | Preparing top-10000 output table
+11:38:38 | INFO | Loading cutoff graph for output annotations
+11:39:28 | INFO | Computing degree annotations for top-10000 pair(s)
+11:39:28 | INFO | Computing graph-distance annotations for top-10000 pair(s)
+11:44:33 | INFO | device: cuda
+11:44:33 | INFO | cutoff_year: 2025
+11:44:33 | INFO | num_candidates: 500000
+11:44:33 | INFO | candidate_mode: anchor
+11:44:42 | INFO | Loading candidate pairs from data/model/surgery/future/candidate_pairs_2025.anchor.pkl.gz
+11:44:42 | INFO | Loading semantic embeddings from data/model/surgery/semantic/pubmedbert_2025.current.pkl.gz
+11:44:50 | INFO | Loading semantic model from data/model/surgery/semantic/pubmedbert_2022.for_2026plus.pt
+11:45:14 | INFO | Loading GNN model from data/model/surgery/gnn/graphsage_2022/model.pt
+11:45:14 | INFO | Loading GNN node features from data/model/surgery/gnn/features_2025.pkl.gz
+11:45:14 | INFO | v_features: loaded from key 'v_features' (data/model/surgery/gnn/features_2025.pkl.gz)
+11:45:14 | INFO | GNN node features loaded: shape=(82283, 10) dtype=float32
+11:45:14 | INFO | Applying log1p transform to GNN node features
+11:45:14 | INFO | Applying z-score normalization to GNN node features
+11:45:14 | INFO | Loading graph for GNN scoring from data/graph/surgery.edges.pkl
+11:45:15 | INFO | Building GNN edge_index for cutoff_year=2025
+11:45:16 | INFO | GNN edge_index built: shape=(2, 7327902) num_edges=7327902
+11:45:16 | INFO | Creating PyG Data object for 82283 node(s)
+11:45:16 | INFO | Preparing 500000 candidate pair(s) for GNN scoring
+11:45:16 | INFO | Creating LinkNeighborLoader: batch_size=16384, fanout=(20, 15), num_workers=8
+11:45:17 | INFO | LinkNeighborLoader created
+11:45:17 | INFO | Initializing GNN encoder/decoder
+11:45:17 | INFO | Loading GNN checkpoint weights
+11:45:17 | INFO | Starting GNN scoring over 500000 candidate pair(s)
+11:45:18 | INFO | Finished GNN scoring: 500000 score(s)
+11:45:18 | INFO | Ranking 500000 scored candidate pair(s)
+11:45:18 | INFO | Preparing top-10000 output table
+11:45:18 | INFO | Loading cutoff graph for output annotations
+11:46:08 | INFO | Computing degree annotations for top-10000 pair(s)
+11:46:08 | INFO | Computing graph-distance annotations for top-10000 pair(s)
+11:46:39 | INFO | Finished graph-distance annotations for 10000 pair(s) using 63 bounded BFS traversal(s)
+11:46:39 | INFO | Building top-pairs dataframe
+11:46:39 | INFO | Writing top-pairs CSV to data/model/surgery/future/top_pairs_2026plus.anchor.csv
+11:46:39 | INFO | Saved top 10000 pairs to data/model/surgery/future/top_pairs_2026plus.anchor.csv
+11:46:39 | INFO | Writing full scored-pairs cache to data/model/surgery/future/scored_pairs_2026plus.anchor.pkl.gz
+11:46:43 | INFO | Saved full sampled scores to data/model/surgery/future/scored_pairs_2026plus.anchor.pkl.gz

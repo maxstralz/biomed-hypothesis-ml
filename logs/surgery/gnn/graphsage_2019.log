@@ -1,0 +1,83 @@
+19:16:51 | INFO | device: cuda
+19:16:51 | INFO | seed: 42
+19:16:51 | INFO | year_start_train: 2019
+19:16:51 | INFO | fanout: (20, 15)
+19:16:51 | INFO | save_model_path: data/model/surgery/gnn/graphsage_2019
+19:16:51 | INFO | Loading dataset
+19:27:44 | INFO | device: cuda
+19:27:44 | INFO | seed: 42
+19:27:44 | INFO | year_start_train: 2019
+19:27:44 | INFO | fanout: (20, 15)
+19:27:44 | INFO | save_model_path: data/model/surgery/gnn/graphsage_2019
+19:27:44 | INFO | Loading dataset
+19:27:44 | INFO | Loading node features
+19:27:44 | INFO | v_features: loaded from key 'v_features' (data/model/surgery/gnn/features_2019.pkl.gz)
+19:27:44 | INFO | Building past-graph edge_index
+19:27:47 | INFO | Loading OOD node features
+19:27:47 | INFO | v_features_ood: loaded from key 'v_features' (data/model/surgery/gnn/features_2022.pkl.gz)
+19:27:47 | INFO | Building OOD past-graph edge_index at year_start=2022
+19:27:49 | INFO | OOD pairs: 200000 | pos_rate: 0.0500 | year_start=2022
+19:27:51 | INFO | Model: SAGEConv2Layer(in_dim=10, hidden_dim=256, out_dim=128) + EdgeMLPDecoder(hidden=256)
+19:27:51 | INFO | Train pairs: 4000000 | Val pairs: 1000000
+19:27:51 | INFO | eval_dir: data/model/surgery/gnn/graphsage_2019/eval
+19:29:14 | INFO | Epoch: 1, Loss: 0.2572, AUC: 0.9014, TP: 61484, FP: 18350, FN: 53127, TN: 867039
+19:29:25 | INFO | OOD | Epoch: 1, AUC: 0.9009, TP: 5650, FP: 4923, FN: 4350, TN: 185077
+19:31:12 | INFO | Epoch: 2, Loss: 0.2029, AUC: 0.9051, TP: 63146, FP: 19163, FN: 51465, TN: 866226
+19:31:16 | INFO | OOD | Epoch: 2, AUC: 0.9040, TP: 6149, FP: 6840, FN: 3851, TN: 183160
+19:32:40 | INFO | Epoch: 3, Loss: 0.2006, AUC: 0.9069, TP: 61421, FP: 16870, FN: 53190, TN: 868519
+19:32:43 | INFO | OOD | Epoch: 3, AUC: 0.9052, TP: 6303, FP: 7389, FN: 3697, TN: 182611
+19:34:07 | INFO | Epoch: 4, Loss: 0.1991, AUC: 0.9080, TP: 61601, FP: 16638, FN: 53010, TN: 868751
+19:34:19 | INFO | OOD | Epoch: 4, AUC: 0.9064, TP: 6439, FP: 8197, FN: 3561, TN: 181803
+19:35:46 | INFO | Epoch: 5, Loss: 0.1983, AUC: 0.9089, TP: 63246, FP: 18131, FN: 51365, TN: 867258
+19:35:56 | INFO | OOD | Epoch: 5, AUC: 0.9074, TP: 6620, FP: 9120, FN: 3380, TN: 180880
+19:37:13 | INFO | Epoch: 6, Loss: 0.1975, AUC: 0.9096, TP: 63981, FP: 18888, FN: 50630, TN: 866501
+19:37:25 | INFO | OOD | Epoch: 6, AUC: 0.9080, TP: 6717, FP: 9649, FN: 3283, TN: 180351
+19:38:33 | INFO | Epoch: 7, Loss: 0.1970, AUC: 0.9101, TP: 63227, FP: 17852, FN: 51384, TN: 867537
+19:38:41 | INFO | OOD | Epoch: 7, AUC: 0.9083, TP: 6695, FP: 9362, FN: 3305, TN: 180638
+19:40:01 | INFO | Epoch: 8, Loss: 0.1966, AUC: 0.9104, TP: 64469, FP: 19066, FN: 50142, TN: 866323
+19:40:05 | INFO | OOD | Epoch: 8, AUC: 0.9087, TP: 6822, FP: 9973, FN: 3178, TN: 180027
+19:41:34 | INFO | Epoch: 9, Loss: 0.1963, AUC: 0.9107, TP: 63858, FP: 18392, FN: 50753, TN: 866997
+19:41:44 | INFO | OOD | Epoch: 9, AUC: 0.9094, TP: 6764, FP: 9806, FN: 3236, TN: 180194
+19:43:08 | INFO | Epoch: 10, Loss: 0.1960, AUC: 0.9111, TP: 64137, FP: 18579, FN: 50474, TN: 866810
+19:43:19 | INFO | OOD | Epoch: 10, AUC: 0.9100, TP: 6774, FP: 9971, FN: 3226, TN: 180029
+19:44:34 | INFO | Epoch: 11, Loss: 0.1957, AUC: 0.9113, TP: 63996, FP: 18306, FN: 50615, TN: 867083
+19:44:45 | INFO | OOD | Epoch: 11, AUC: 0.9099, TP: 6827, FP: 10196, FN: 3173, TN: 179804
+19:46:01 | INFO | Epoch: 12, Loss: 0.1955, AUC: 0.9116, TP: 63474, FP: 17863, FN: 51137, TN: 867526
+19:46:12 | INFO | OOD | Epoch: 12, AUC: 0.9103, TP: 6799, FP: 9948, FN: 3201, TN: 180052
+19:48:00 | INFO | Epoch: 13, Loss: 0.1953, AUC: 0.9118, TP: 63409, FP: 17663, FN: 51202, TN: 867726
+19:48:04 | INFO | OOD | Epoch: 13, AUC: 0.9103, TP: 6818, FP: 9932, FN: 3182, TN: 180068
+19:49:31 | INFO | Epoch: 14, Loss: 0.1952, AUC: 0.9119, TP: 63981, FP: 18157, FN: 50630, TN: 867232
+19:49:35 | INFO | OOD | Epoch: 14, AUC: 0.9103, TP: 6864, FP: 10431, FN: 3136, TN: 179569
+19:51:02 | INFO | Epoch: 15, Loss: 0.1950, AUC: 0.9121, TP: 63092, FP: 17177, FN: 51519, TN: 868212
+19:51:07 | INFO | OOD | Epoch: 15, AUC: 0.9103, TP: 6815, FP: 10087, FN: 3185, TN: 179913
+19:52:29 | INFO | Epoch: 16, Loss: 0.1948, AUC: 0.9122, TP: 63153, FP: 17143, FN: 51458, TN: 868246
+19:52:34 | INFO | OOD | Epoch: 16, AUC: 0.9104, TP: 6844, FP: 10140, FN: 3156, TN: 179860
+19:54:01 | INFO | Epoch: 17, Loss: 0.1947, AUC: 0.9123, TP: 64301, FP: 18323, FN: 50310, TN: 867066
+19:54:05 | INFO | OOD | Epoch: 17, AUC: 0.9107, TP: 6930, FP: 10838, FN: 3070, TN: 179162
+19:55:32 | INFO | Epoch: 18, Loss: 0.1945, AUC: 0.9123, TP: 65824, FP: 20201, FN: 48787, TN: 865188
+19:55:38 | INFO | OOD | Epoch: 18, AUC: 0.9101, TP: 7036, FP: 11895, FN: 2964, TN: 178105
+19:57:07 | INFO | Epoch: 19, Loss: 0.1944, AUC: 0.9125, TP: 63454, FP: 17351, FN: 51157, TN: 868038
+19:57:16 | INFO | OOD | Epoch: 19, AUC: 0.9104, TP: 6901, FP: 10719, FN: 3099, TN: 179281
+19:58:41 | INFO | Epoch: 20, Loss: 0.1944, AUC: 0.9125, TP: 62730, FP: 16628, FN: 51881, TN: 868761
+19:58:52 | INFO | OOD | Epoch: 20, AUC: 0.9104, TP: 6861, FP: 10489, FN: 3139, TN: 179511
+20:00:18 | INFO | Epoch: 21, Loss: 0.1942, AUC: 0.9128, TP: 64826, FP: 18731, FN: 49785, TN: 866658
+20:00:29 | INFO | OOD | Epoch: 21, AUC: 0.9103, TP: 7044, FP: 11583, FN: 2956, TN: 178417
+20:01:45 | INFO | Epoch: 22, Loss: 0.1941, AUC: 0.9128, TP: 62818, FP: 16600, FN: 51793, TN: 868789
+20:01:47 | INFO | OOD | Epoch: 22, AUC: 0.9101, TP: 6923, FP: 10982, FN: 3077, TN: 179018
+20:02:16 | INFO | Epoch: 23, Loss: 0.1940, AUC: 0.9129, TP: 63126, FP: 16943, FN: 51485, TN: 868446
+20:02:19 | INFO | OOD | Epoch: 23, AUC: 0.9103, TP: 6985, FP: 11195, FN: 3015, TN: 178805
+20:02:47 | INFO | Epoch: 24, Loss: 0.1939, AUC: 0.9131, TP: 64380, FP: 18201, FN: 50231, TN: 867188
+20:02:49 | INFO | OOD | Epoch: 24, AUC: 0.9102, TP: 7082, FP: 11950, FN: 2918, TN: 178050
+20:03:16 | INFO | Epoch: 25, Loss: 0.1938, AUC: 0.9131, TP: 63720, FP: 17446, FN: 50891, TN: 867943
+20:03:19 | INFO | OOD | Epoch: 25, AUC: 0.9103, TP: 7043, FP: 11614, FN: 2957, TN: 178386
+20:03:46 | INFO | Epoch: 26, Loss: 0.1938, AUC: 0.9134, TP: 62004, FP: 15737, FN: 52607, TN: 869652
+20:03:48 | INFO | OOD | Epoch: 26, AUC: 0.9101, TP: 6951, FP: 11014, FN: 3049, TN: 178986
+20:04:16 | INFO | Epoch: 27, Loss: 0.1936, AUC: 0.9134, TP: 62643, FP: 16203, FN: 51968, TN: 869186
+20:04:19 | INFO | OOD | Epoch: 27, AUC: 0.9097, TP: 7016, FP: 11643, FN: 2984, TN: 178357
+20:04:46 | INFO | Epoch: 28, Loss: 0.1936, AUC: 0.9135, TP: 64281, FP: 18100, FN: 50330, TN: 867289
+20:04:49 | INFO | OOD | Epoch: 28, AUC: 0.9090, TP: 7162, FP: 12904, FN: 2838, TN: 177096
+20:05:18 | INFO | Epoch: 29, Loss: 0.1934, AUC: 0.9137, TP: 65858, FP: 19807, FN: 48753, TN: 865582
+20:05:21 | INFO | OOD | Epoch: 29, AUC: 0.9089, TP: 7266, FP: 13940, FN: 2734, TN: 176060
+20:05:47 | INFO | Epoch: 30, Loss: 0.1933, AUC: 0.9136, TP: 64302, FP: 17865, FN: 50309, TN: 867524
+20:05:49 | INFO | OOD | Epoch: 30, AUC: 0.9090, TP: 7191, FP: 13057, FN: 2809, TN: 176943
+20:05:49 | INFO | Saving final model to data/model/surgery/gnn/graphsage_2019/model.pt

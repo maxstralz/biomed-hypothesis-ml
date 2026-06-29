@@ -1,0 +1,72 @@
+anastomotic leak
+surgical site infection
+postoperative pancreatic fistula
+clinically relevant postoperative pancreatic fistula
+postoperative delirium
+postoperative ileus
+prolonged postoperative ileus
+postoperative acute kidney injury
+postoperative pneumonia
+venous thromboembolism
+postoperative venous thromboembolism
+bile leak
+post-hepatectomy liver failure
+wound dehiscence
+negative pressure wound therapy
+gut microbiota
+gut microbiome
+gut microbiota dysbiosis
+fecal microbiota transplantation
+microbial dysbiosis
+preoperative sarcopenia
+sarcopenic obesity
+modified frailty index
+clinical frailty scale
+preoperative frailty
+enhanced recovery after surgery
+multimodal prehabilitation
+prehabilitation program
+opioid-free anesthesia
+postoperative opioid consumption
+mechanical bowel preparation
+oral antibiotic bowel preparation
+perioperative antibiotic prophylaxis
+circulating tumor dna
+liquid biopsy
+ctdna clearance
+ctdna monitoring
+radiomics features
+radiomics model
+radiomics signature
+ct radiomics
+artificial intelligence
+machine learning models
+indocyanine green fluorescence imaging
+indocyanine green fluorescence angiography
+near-infrared fluorescence imaging
+fluorescence-guided surgery
+endoscopic vacuum therapy
+robotic-assisted surgery
+robotic colorectal surgery
+minimally invasive pancreaticoduodenectomy
+laparoscopic liver resection
+transanal total mesorectal excision
+neoadjuvant immunotherapy
+neoadjuvant chemoimmunotherapy
+neoadjuvant immunochemotherapy
+total neoadjuvant therapy
+immune checkpoint inhibitors
+immune checkpoint blockade
+organ preservation
+pancreatic ductal adenocarcinoma
+locally advanced pancreatic cancer
+perihilar cholangiocarcinoma
+peritoneal metastasis
+colorectal liver metastasis
+tumor immune microenvironment
+immunosuppressive tumor microenvironment
+patient-derived organoids
+single-cell rna sequencing
+spatial transcriptomics
+metabolic and bariatric surgery
+post-bariatric hypoglycemia

@@ -1,0 +1,43 @@
+22:06:51 | INFO | device: cuda
+22:06:51 | INFO | seed: 42
+22:06:51 | INFO | year_start_train: 2022
+22:06:51 | INFO | fanout: (20, 15)
+22:06:51 | INFO | save_model_path: data/model/surgery/gnn/graphsage_2022
+22:06:51 | INFO | Loading dataset
+22:06:52 | INFO | Loading node features
+22:06:52 | INFO | v_features: loaded from key 'v_features' (data/model/surgery/gnn/features_2022.pkl.gz)
+22:06:52 | INFO | Building past-graph edge_index
+22:06:56 | INFO | Model: SAGEConv2Layer(in_dim=10, hidden_dim=256, out_dim=128) + EdgeMLPDecoder(hidden=256)
+22:06:56 | INFO | Train pairs: 4000000 | Val pairs: 1000000
+22:06:56 | INFO | eval_dir: data/model/surgery/gnn/graphsage_2022/eval
+22:08:05 | INFO | Epoch: 1, Loss: 0.2480, AUC: 0.9027, TP: 55963, FP: 16588, FN: 52704, TN: 874745
+22:09:02 | INFO | Epoch: 2, Loss: 0.1983, AUC: 0.9069, TP: 57078, FP: 16897, FN: 51589, TN: 874436
+22:09:41 | INFO | Epoch: 3, Loss: 0.1956, AUC: 0.9096, TP: 57247, FP: 16327, FN: 51420, TN: 875006
+22:10:47 | INFO | Epoch: 4, Loss: 0.1938, AUC: 0.9112, TP: 58566, FP: 17274, FN: 50101, TN: 874059
+22:11:43 | INFO | Epoch: 5, Loss: 0.1925, AUC: 0.9125, TP: 57327, FP: 15727, FN: 51340, TN: 875606
+22:12:26 | INFO | Epoch: 6, Loss: 0.1916, AUC: 0.9133, TP: 58884, FP: 17059, FN: 49783, TN: 874274
+22:13:30 | INFO | Epoch: 7, Loss: 0.1911, AUC: 0.9140, TP: 58228, FP: 16245, FN: 50439, TN: 875088
+22:14:27 | INFO | Epoch: 8, Loss: 0.1906, AUC: 0.9143, TP: 59232, FP: 17155, FN: 49435, TN: 874178
+22:15:11 | INFO | Epoch: 9, Loss: 0.1903, AUC: 0.9145, TP: 60730, FP: 18768, FN: 47937, TN: 872565
+22:16:15 | INFO | Epoch: 10, Loss: 0.1898, AUC: 0.9148, TP: 61039, FP: 19235, FN: 47628, TN: 872098
+22:17:22 | INFO | Epoch: 11, Loss: 0.1896, AUC: 0.9153, TP: 59084, FP: 16855, FN: 49583, TN: 874478
+22:18:25 | INFO | Epoch: 12, Loss: 0.1893, AUC: 0.9155, TP: 59600, FP: 17245, FN: 49067, TN: 874088
+22:19:28 | INFO | Epoch: 13, Loss: 0.1891, AUC: 0.9158, TP: 59320, FP: 16934, FN: 49347, TN: 874399
+22:20:29 | INFO | Epoch: 14, Loss: 0.1889, AUC: 0.9162, TP: 59458, FP: 16981, FN: 49209, TN: 874352
+22:21:21 | INFO | Epoch: 15, Loss: 0.1886, AUC: 0.9163, TP: 60925, FP: 18491, FN: 47742, TN: 872842
+22:22:20 | INFO | Epoch: 16, Loss: 0.1884, AUC: 0.9166, TP: 58739, FP: 16042, FN: 49928, TN: 875291
+22:23:30 | INFO | Epoch: 17, Loss: 0.1883, AUC: 0.9166, TP: 58440, FP: 15883, FN: 50227, TN: 875450
+22:24:41 | INFO | Epoch: 18, Loss: 0.1881, AUC: 0.9168, TP: 58250, FP: 15614, FN: 50417, TN: 875719
+22:25:53 | INFO | Epoch: 19, Loss: 0.1880, AUC: 0.9170, TP: 58636, FP: 15889, FN: 50031, TN: 875444
+22:27:02 | INFO | Epoch: 20, Loss: 0.1878, AUC: 0.9169, TP: 60648, FP: 18082, FN: 48019, TN: 873251
+22:28:16 | INFO | Epoch: 21, Loss: 0.1876, AUC: 0.9173, TP: 59621, FP: 16913, FN: 49046, TN: 874420
+22:29:25 | INFO | Epoch: 22, Loss: 0.1875, AUC: 0.9175, TP: 58717, FP: 15931, FN: 49950, TN: 875402
+22:30:28 | INFO | Epoch: 23, Loss: 0.1873, AUC: 0.9174, TP: 59514, FP: 16524, FN: 49153, TN: 874809
+22:31:36 | INFO | Epoch: 24, Loss: 0.1872, AUC: 0.9176, TP: 59213, FP: 16334, FN: 49454, TN: 874999
+22:32:33 | INFO | Epoch: 25, Loss: 0.1871, AUC: 0.9178, TP: 59108, FP: 16112, FN: 49559, TN: 875221
+22:33:32 | INFO | Epoch: 26, Loss: 0.1870, AUC: 0.9180, TP: 60167, FP: 17099, FN: 48500, TN: 874234
+22:34:40 | INFO | Epoch: 27, Loss: 0.1869, AUC: 0.9181, TP: 59251, FP: 16203, FN: 49416, TN: 875130
+22:35:50 | INFO | Epoch: 28, Loss: 0.1867, AUC: 0.9183, TP: 59841, FP: 16686, FN: 48826, TN: 874647
+22:36:59 | INFO | Epoch: 29, Loss: 0.1866, AUC: 0.9184, TP: 59135, FP: 16074, FN: 49532, TN: 875259
+22:38:04 | INFO | Epoch: 30, Loss: 0.1866, AUC: 0.9184, TP: 59948, FP: 16893, FN: 48719, TN: 874440
+22:38:04 | INFO | Saving final model to data/model/surgery/gnn/graphsage_2022/model.pt

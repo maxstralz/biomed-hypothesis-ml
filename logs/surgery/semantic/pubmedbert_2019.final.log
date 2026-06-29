@@ -1,0 +1,127 @@
+19:25:08 | INFO | Running with seed: 42
+19:25:08 | INFO | Running with parameters:
+19:25:08 | INFO | lr: 0.001
+19:25:08 | INFO | batch_size: 1000
+19:25:08 | INFO | num_epochs: 15000
+19:25:08 | INFO | pos_ratio: 0.3
+19:25:08 | INFO | dropout: 0.1
+19:25:08 | INFO | layers: [1536, 1024, 819, 10, 1]
+19:25:08 | INFO | step_size: 200
+19:25:08 | INFO | gamma: 0.9
+19:25:08 | INFO | log_interval: 200
+19:25:08 | INFO | sliding_window: 5
+19:25:08 | INFO | use_loader: False
+19:25:08 | INFO | emb_comb_strategy: concat
+19:25:08 | INFO | Loading data
+19:25:08 | INFO | Loading compressed file data/model/surgery/semantic/pubmedbert_2019.current.pkl.gz
+19:25:16 | INFO | Loading compressed file data/model/surgery/semantic/pubmedbert_2022.current.pkl.gz
+19:25:24 | INFO | compile_threads set to 32
+19:25:24 | INFO | Created a temporary directory at /tmp/tmpqh468zk6
+19:25:24 | INFO | Writing /tmp/tmpqh468zk6/_remote_module_non_scriptable.py
+19:25:26 | INFO | Training model
+19:26:00 | INFO | Epoch: 200, Loss: 0.4269, AUC: 0.9097, TP: 7584, FP: 21419, FN: 2416, TN: 168581
+19:26:00 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.200
+19:26:36 | INFO | Epoch: 400, Loss: 0.3910, AUC: 0.9218, TP: 6918, FP: 11061, FN: 3082, TN: 178939
+19:26:36 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.400
+19:27:11 | INFO | Epoch: 600, Loss: 0.3339, AUC: 0.9275, TP: 8240, FP: 22881, FN: 1760, TN: 167119
+19:27:11 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.600
+19:27:46 | INFO | Epoch: 800, Loss: 0.3200, AUC: 0.9357, TP: 8338, FP: 22258, FN: 1662, TN: 167742
+19:27:46 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.800
+19:28:34 | INFO | Epoch: 1000, Loss: 0.2999, AUC: 0.9374, TP: 7804, FP: 14012, FN: 2196, TN: 175988
+19:28:34 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.1000
+19:29:14 | INFO | Epoch: 1200, Loss: 0.2857, AUC: 0.9412, TP: 8135, FP: 16689, FN: 1865, TN: 173311
+19:29:14 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.1200
+19:30:00 | INFO | Epoch: 1400, Loss: 0.2624, AUC: 0.9426, TP: 8187, FP: 16350, FN: 1813, TN: 173650
+19:30:00 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.1400
+19:30:42 | INFO | Epoch: 1600, Loss: 0.2662, AUC: 0.9451, TP: 7752, FP: 11778, FN: 2248, TN: 178222
+19:30:42 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.1600
+19:31:19 | INFO | Epoch: 1800, Loss: 0.2778, AUC: 0.9453, TP: 8424, FP: 18143, FN: 1576, TN: 171857
+19:31:19 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.1800
+19:32:07 | INFO | Epoch: 2000, Loss: 0.2607, AUC: 0.9465, TP: 8450, FP: 18256, FN: 1550, TN: 171744
+19:32:07 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.2000
+19:32:44 | INFO | Epoch: 2200, Loss: 0.2666, AUC: 0.9481, TP: 8365, FP: 16826, FN: 1635, TN: 173174
+19:32:44 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.2200
+19:33:31 | INFO | Epoch: 2400, Loss: 0.2399, AUC: 0.9509, TP: 8614, FP: 18849, FN: 1386, TN: 171151
+19:33:31 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.2400
+19:34:08 | INFO | Epoch: 2600, Loss: 0.2469, AUC: 0.9504, TP: 8248, FP: 14162, FN: 1752, TN: 175838
+19:34:08 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.2600
+19:34:53 | INFO | Epoch: 2800, Loss: 0.2462, AUC: 0.9513, TP: 8327, FP: 14752, FN: 1673, TN: 175248
+19:34:53 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.2800
+19:35:34 | INFO | Epoch: 3000, Loss: 0.2073, AUC: 0.9517, TP: 8410, FP: 15160, FN: 1590, TN: 174840
+19:35:34 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.3000
+19:36:17 | INFO | Epoch: 3200, Loss: 0.2141, AUC: 0.9538, TP: 8213, FP: 12335, FN: 1787, TN: 177665
+19:36:17 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.3200
+19:37:03 | INFO | Epoch: 3400, Loss: 0.2245, AUC: 0.9534, TP: 8419, FP: 15023, FN: 1581, TN: 174977
+19:37:03 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.3400
+19:37:47 | INFO | Epoch: 3600, Loss: 0.2206, AUC: 0.9540, TP: 8212, FP: 12479, FN: 1788, TN: 177521
+19:37:47 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.3600
+19:38:34 | INFO | Epoch: 3800, Loss: 0.2201, AUC: 0.9550, TP: 8228, FP: 12100, FN: 1772, TN: 177900
+19:38:34 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.3800
+19:39:23 | INFO | Epoch: 4000, Loss: 0.2069, AUC: 0.9552, TP: 8259, FP: 12473, FN: 1741, TN: 177527
+19:39:23 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.4000
+19:40:04 | INFO | Epoch: 4200, Loss: 0.2080, AUC: 0.9551, TP: 8417, FP: 14131, FN: 1583, TN: 175869
+19:40:04 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.4200
+19:40:54 | INFO | Epoch: 4400, Loss: 0.2035, AUC: 0.9557, TP: 8370, FP: 13185, FN: 1630, TN: 176815
+19:40:54 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.4400
+19:41:35 | INFO | Epoch: 4600, Loss: 0.1754, AUC: 0.9557, TP: 8161, FP: 11294, FN: 1839, TN: 178706
+19:41:35 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.4600
+19:42:21 | INFO | Epoch: 4800, Loss: 0.2217, AUC: 0.9558, TP: 8194, FP: 11165, FN: 1806, TN: 178835
+19:42:21 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.4800
+19:43:03 | INFO | Epoch: 5000, Loss: 0.1962, AUC: 0.9560, TP: 8273, FP: 11912, FN: 1727, TN: 178088
+19:43:03 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.5000
+19:43:48 | INFO | Epoch: 5200, Loss: 0.2052, AUC: 0.9564, TP: 8391, FP: 13022, FN: 1609, TN: 176978
+19:43:48 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.5200
+19:44:33 | INFO | Epoch: 5400, Loss: 0.2170, AUC: 0.9564, TP: 8371, FP: 12695, FN: 1629, TN: 177305
+19:44:33 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.5400
+19:45:18 | INFO | Epoch: 5600, Loss: 0.2004, AUC: 0.9571, TP: 8247, FP: 11204, FN: 1753, TN: 178796
+19:45:18 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.5600
+19:46:00 | INFO | Epoch: 5800, Loss: 0.2030, AUC: 0.9573, TP: 8263, FP: 11401, FN: 1737, TN: 178599
+19:46:00 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.5800
+19:46:46 | INFO | Epoch: 6000, Loss: 0.1912, AUC: 0.9573, TP: 8439, FP: 13283, FN: 1561, TN: 176717
+19:46:46 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.6000
+19:47:29 | INFO | Epoch: 6200, Loss: 0.1874, AUC: 0.9575, TP: 8305, FP: 11839, FN: 1695, TN: 178161
+19:47:29 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.6200
+19:48:10 | INFO | Epoch: 6400, Loss: 0.1996, AUC: 0.9578, TP: 8289, FP: 11622, FN: 1711, TN: 178378
+19:48:10 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.6400
+19:48:59 | INFO | Epoch: 6600, Loss: 0.2112, AUC: 0.9576, TP: 8310, FP: 11939, FN: 1690, TN: 178061
+19:48:59 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.6600
+19:49:39 | INFO | Epoch: 6800, Loss: 0.2048, AUC: 0.9575, TP: 8358, FP: 12281, FN: 1642, TN: 177719
+19:49:39 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.6800
+19:50:30 | INFO | Epoch: 7000, Loss: 0.1901, AUC: 0.9574, TP: 8327, FP: 12098, FN: 1673, TN: 177902
+19:50:30 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.7000
+19:51:10 | INFO | Epoch: 7200, Loss: 0.1862, AUC: 0.9578, TP: 8389, FP: 12481, FN: 1611, TN: 177519
+19:51:10 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.7200
+19:52:00 | INFO | Epoch: 7400, Loss: 0.1802, AUC: 0.9578, TP: 8298, FP: 11654, FN: 1702, TN: 178346
+19:52:00 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.7400
+19:52:39 | INFO | Epoch: 7600, Loss: 0.1927, AUC: 0.9580, TP: 8337, FP: 12028, FN: 1663, TN: 177972
+19:52:39 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.7600
+19:53:28 | INFO | Epoch: 7800, Loss: 0.2134, AUC: 0.9579, TP: 8342, FP: 11891, FN: 1658, TN: 178109
+19:53:28 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.7800
+19:54:05 | INFO | Epoch: 8000, Loss: 0.2093, AUC: 0.9578, TP: 8308, FP: 11780, FN: 1692, TN: 178220
+19:54:05 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.8000
+19:54:53 | INFO | Epoch: 8200, Loss: 0.1802, AUC: 0.9581, TP: 8365, FP: 12268, FN: 1635, TN: 177732
+19:54:53 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.8200
+19:55:34 | INFO | Epoch: 8400, Loss: 0.1922, AUC: 0.9580, TP: 8303, FP: 11661, FN: 1697, TN: 178339
+19:55:34 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.8400
+19:56:21 | INFO | Epoch: 8600, Loss: 0.2173, AUC: 0.9581, TP: 8298, FP: 11501, FN: 1702, TN: 178499
+19:56:21 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.8600
+19:57:04 | INFO | Epoch: 8800, Loss: 0.1830, AUC: 0.9581, TP: 8299, FP: 11441, FN: 1701, TN: 178559
+19:57:04 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.8800
+19:57:53 | INFO | Epoch: 9000, Loss: 0.1847, AUC: 0.9581, TP: 8346, FP: 12003, FN: 1654, TN: 177997
+19:57:53 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.9000
+19:58:37 | INFO | Epoch: 9200, Loss: 0.1741, AUC: 0.9581, TP: 8341, FP: 12019, FN: 1659, TN: 177981
+19:58:37 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.9200
+19:59:25 | INFO | Epoch: 9400, Loss: 0.1922, AUC: 0.9581, TP: 8361, FP: 12145, FN: 1639, TN: 177855
+19:59:25 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.9400
+20:00:09 | INFO | Epoch: 9600, Loss: 0.1827, AUC: 0.9581, TP: 8314, FP: 11731, FN: 1686, TN: 178269
+20:00:09 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.9600
+20:00:53 | INFO | Epoch: 9800, Loss: 0.2081, AUC: 0.9581, TP: 8359, FP: 12139, FN: 1641, TN: 177861
+20:00:53 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.9800
+20:01:41 | INFO | Epoch: 10000, Loss: 0.2084, AUC: 0.9581, TP: 8335, FP: 11817, FN: 1665, TN: 178183
+20:01:41 | INFO | Saving checkpoint to data/model/surgery/semantic/pubmedbert_2019.final.pt.10000
+20:01:41 | INFO | Early stopping triggered
+20:01:42 | INFO | TorchDynamo attempted to trace the following frames: [
+
+]
+20:01:42 | INFO | TorchDynamo compilation metrics:
+Function, Runtimes (s)
