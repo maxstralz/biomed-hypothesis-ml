@@ -253,7 +253,7 @@ median concepts per abstract: 7
 concept range per abstract:   1-12
 ```
 
-There are 26 PMIDs in the abstract table that are not present in the final LLM table. These were small residual extraction failures/skips; the graph was built from the final LLM table.
+There are 26 PMIDs in the abstract table that are not present in the final LLM table. These were small residual extraction failures/skips and removed from the final LLM table; the graph was built from the final LLM table.
 
 Check LLM extraction metadata and concept statistics:
 
