@@ -1,4 +1,14 @@
-[![DOI](https://zenodo.org/badge/618471480.svg)](https://doi.org/10.5281/zenodo.18466587)
+# biomed-hypothesis-ml
+
+> [!NOTE]
+> This repository is adapted from [aimat-lab/materials_concepts](https://github.com/aimat-lab/materials_concepts)
+> ([Zenodo DOI 10.5281/zenodo.18466587](https://doi.org/10.5281/zenodo.18466587)), the code accompanying
+> Marwitz et al., *Predicting new research directions in materials science using large language models and concept graphs*,
+> Nature Machine Intelligence 8, 535–544 (2026), [doi:10.1038/s42256-026-01206-y](https://doi.org/10.1038/s42256-026-01206-y).
+>
+> The adaptation to biomedical literature (PubMed / surgery) is described in [Biomedical.md](Biomedical.md).
+> The original materials-science pipeline and documentation below are kept largely as upstream.
+> If you use this code, please also cite the original work (see [Citation](#citation)).
 
 
 # System Requirements
@@ -58,11 +68,11 @@ Installation should take **5-10 min**.
 
 # Reproducing paper results
 
-Notes on how to reproduce the AUROC values present in the paper can be found in `Reproduce.md`.
+Notes on how to reproduce the AUROC values present in the original paper can be found in `Reproduce.md`.
 
 # Predicting the future for YOUR concepts
 
-This is a demo of the best performing model in our paper (the mixture), utilzing both input modalities (topological features and semantic information).
+This is a demo of the best performing model in the original paper (the mixture), utilzing both input modalities (topological features and semantic information).
 
 Refer to `materials_concepts/predict/README.md` that guides you through running `materials_concepts/predict/main.py`. The "CLI App" will allow you entering your concepts after specifying where the model and feature files can be found. It will output a report containing your own concepts, enriched by top suggestions what new concepts might be interesting to combine. 
 
@@ -425,4 +435,31 @@ export RESEARCHER="...";
 python materials_concepts/report/generate_llm_selection.py --txt_path materials_concepts/report/prompt_sec3.txt --tex_path materials_concepts/report/pdf/generation/${RESEARCHER}/distilled/plain_suggestions.tex --output_path materials_concepts/report/pdf/generation/${RESEARCHER}/llm_report_sec3.txt
 
 python materials_concepts/report/generate_llm_selection.py --txt_path materials_concepts/report/prompt_sec5.txt --tex_path materials_concepts/report/pdf/generation/${RESEARCHER}/distilled/exotic_suggestions.tex --output_path materials_concepts/report/pdf/generation/${RESEARCHER}/llm_report_sec5.txt
+```
+
+# Citation
+
+This code builds on the original `materials_concepts` repository. If you use it, please cite the original paper and code:
+
+```bibtex
+@article{marwitz2026predicting,
+  title   = {Predicting new research directions in materials science using large language models and concept graphs},
+  author  = {Marwitz, Thomas and Colsmann, Alexander and Breitung, Ben and Brabec, Christoph and Kirchlechner, Christoph and Blasco, Eva and Marques, Gabriel Cadilha and Hahn, Horst and Hirtz, Michael and Levkin, Pavel A. and Eggeler, Yolita M. and Schl{\"o}der, Tobias and Friederich, Pascal},
+  journal = {Nature Machine Intelligence},
+  volume  = {8},
+  number  = {4},
+  pages   = {535--544},
+  year    = {2026},
+  doi     = {10.1038/s42256-026-01206-y}
+}
+
+@software{marwitz2026materials_concepts,
+  author    = {Marwitz, Thomas},
+  title     = {aimat-lab/materials\_concepts: Code for paper},
+  version   = {1.0.0},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.18466587},
+  url       = {https://github.com/aimat-lab/materials_concepts}
+}
 ```
